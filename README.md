@@ -14,6 +14,5 @@ Note: this only works for jailbroken phones, as you need to access mobile Chrome
 
  1. Make sure you have [Node.js](http://nodejs.org/) installed
  2. Copy your `session.bak` file to the root of this repository
- 3. At the repository root, run `node app.js` on the command line
- 4. The program extract all urls from `session.bak` and put them into "urls.txt"
+ 3. At the repository root, run `node app.js > urls.txt` on the command line, which will extract all urls from `session.bak` and put them into "urls.txt"
  5. Finished! I recommend using [Session Buddy's](https://chrome.google.com/webstore/detail/session-buddy/edacconmaakjimmfgnblocblbcdcpbko?hl=en) import option to save all your urls or easily open them all at once

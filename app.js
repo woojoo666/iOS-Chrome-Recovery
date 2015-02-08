@@ -1,7 +1,6 @@
 var fs = require('fs');
 var constants = require('constants');
 var filepath = "session.bak";
-var outputFile = "urls.txt";
 
 fs.open(filepath, 'r', function(err, fd) {
 	fs.fstat(fd, function(err, stats) {
@@ -46,7 +45,7 @@ fs.open(filepath, 'r', function(err, fd) {
 			var decode = decodeURIComponent(decodeURI(url));
 			decode = decode.split(" ").join("%20"); //encode spaces back
 			decode = decode.split(';')[0]; //ignore anything past a semicolon
-			fs.appendFileSync(outputFile, decode + '\n');
+			console.log(decode);
 			return decode;
 		});
 		//console.log(urls);
